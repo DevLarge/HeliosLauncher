@@ -1,0 +1,35 @@
+directories:
+  output: dist
+  buildResources: build
+appId: stellarnetworklauncher
+productName: Stellar-Network-Launcher
+artifactName: '${productName}-setup-${version}.${ext}'
+copyright: Copyright © 2018-2021 Stellar Network
+win:
+  target:
+    - target: nsis
+      arch: x64
+nsis:
+  oneClick: false
+  perMachine: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+mac:
+  target: dmg
+  category: public.app-category.games
+linux:
+  target: AppImage
+  maintainer: Stellar Network
+  vendor: Stellar Network
+  synopsis: Modded Minecraft Launcher for Stellar Network
+  description: Custom launcher which allows users to join modded servers from Stellar.
+  category: Game
+compression: maximum
+files:
+  - filter:
+      - '!{dist,.gitignore,.vscode,docs,dev-app-update.yml,.travis.yml,.nvmrc,.eslintrc.json,build.js}'
+extraResources:
+  - filter:
+      - libraries
+asar: true
+electronVersion: 11.0.5
