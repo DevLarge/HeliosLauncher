@@ -50,9 +50,8 @@ deploy:
   edge: true
   api_key: $GH_TOKEN
   file:
-    - dist/Stellar-Network.Launcher.setup-1.0.1.exe
-    - dist/Stellar-Network-Launcher-setup-1.0.1.exe.blockmap
-    - dist/latest.yml
+    - dist/Stellar-Network.Launcher.setup-1.0.2.exe
+    - dist/Stellar-Network-Launcher-setup-1.0.2.exe.blockmap
   draft: true
   overwrite: false
   on:
