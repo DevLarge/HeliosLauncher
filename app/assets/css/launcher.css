@@ -2938,6 +2938,12 @@ input:checked + .toggleSwitchSlider:before {
     transition-delay:0s;
 }
 
+/* Large added Textures Created By: KattdoesArt#8492 text */
+#textures_created_by {
+    color: #969696;
+    font-size: 12px;
+}
+
 /* Twitter icon colors. */
 #twitterSVG:hover,
 #twitterURL:focus #twitterSVG {
